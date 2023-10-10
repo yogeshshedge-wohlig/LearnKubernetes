@@ -4,7 +4,7 @@ const port = 3001
 
 app.get('/', (req, res) => {
   console.log('Hello World Log !')
-  res.send('Hello World!')
+  res.send('Welcome Hello World!')
 
 })
 
