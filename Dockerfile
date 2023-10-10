@@ -1,7 +1,6 @@
 FROM node:latest
-WORKDIR /usr/src/app
-COPY package*.json ./
+WORKDIR /yogesh_s
+COPY . /yogesh_s
 RUN npm install
-COPY . .
 EXPOSE 3000
-CMD ["node", "app.js"]
+CMD node app.js
