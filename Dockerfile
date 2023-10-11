@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:18-slim
 WORKDIR /yogesh_s2
 COPY . /yogesh_s2
 RUN npm install
