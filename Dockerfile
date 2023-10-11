@@ -1,4 +1,4 @@
-FROM node:0.0.1.RELEASE .
+FROM node:0.0.1.RELEASE
 WORKDIR /yogesh_s2
 COPY . /yogesh_s2
 RUN npm install
