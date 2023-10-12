@@ -3,7 +3,7 @@ const app = express()
 const port = 3001
 
 app.get('/', (req, res) => {
-  console.log('Hello World Log !')
+  console.log('Hello World Log Version 0.0.4 !')
   getLog()
   res.send('Welcome Hello World!')
 
@@ -17,6 +17,6 @@ app.listen(port, () => {
 function getLog() {
   const types = ['object', 'array', 'string', 'integer', 'float', 'boolean']
   for (const type of types) {
-    console.log(`A JavaScript type is: ${type}`)
+    console.log(`Application Version - 0.0.4 and A JavaScript type is: ${type}`)
   }
 }
