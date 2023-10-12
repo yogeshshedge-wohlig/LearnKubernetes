@@ -17,6 +17,6 @@ app.listen(port, () => {
 function getLog() {
   const types = ['object', 'array', 'string', 'integer', 'float', 'boolean']
   for (const type of types) {
-    console.log(`Application Version - 0.0.4 and A JavaScript type is: ${type}`)
+    console.log(`Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is: ${type}`)
   }
 }
