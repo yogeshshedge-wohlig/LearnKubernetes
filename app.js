@@ -2,7 +2,53 @@ const express = require('express')
 const app = express()
 const port = 3001
 
-const obj = {name: "John", age: 30, city: "New York"};
+const obj = [
+	{
+		color: "red",
+		value: "#f00"
+	},
+	{
+		color: "green",
+		value: "#0f0"
+	},
+	{
+		color: "blue",
+		value: "#00f"
+	},
+	{
+		color: "cyan",
+		value: "#0ff"
+	},
+	{
+		color: "magenta",
+		value: "#f0f"
+	},
+	{
+		color: "yellow",
+		value: "#ff0"
+	},
+	{
+		color: "black",
+		value: "#000"
+	},
+  {
+		color: "a",
+		value: "#000"
+	},
+  {
+		color: "b",
+		value: "#000"
+	},
+  {
+		color: "c",
+		value: "#000"
+	},
+  {
+		color: "d",
+		value: "#000"
+	}
+]
+
 const myJSON = JSON.stringify(obj);
 
 app.get('/', (req, res) => {
@@ -11,7 +57,7 @@ app.get('/', (req, res) => {
   var arr = []
   let data = {}
   for (const type of types) {
-    console.log( 'myJSON :: ', obj ,  ` Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is: ${type}`)
+    console.log( 'myJSON with Stringify :: ', myJSON ,  ` Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is| Application Version - 0.0.4 and A JavaScript type is | Application Version - 0.0.4 and A JavaScript type is: ${type}`)
     arr.push(type)
   }
   data.arrData= arr
