@@ -6,7 +6,7 @@ const obj = {name: "John", age: 30, city: "New York"};
 const myJSON = JSON.stringify(obj);
 
 app.get('/', (req, res) => {
-  console.log('Hello World Log Version 0.0.4 !')
+  console.log('Hello World Log Version 0.0.3 !')
   const types = ['object', 'array', 'string', 'integer', 'float', 'boolean']
   var arr = []
   let data = {}
