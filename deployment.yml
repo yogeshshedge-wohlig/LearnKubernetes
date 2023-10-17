@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nodeserver
-          image: yogeshshedge/nodeapp:0.0.2.RELEASE
+          image: yogeshshedge/nodeapp:0.0.3.RELEASE
           ports:
           - containerPort: 3001
