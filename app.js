@@ -22,14 +22,13 @@ app.listen(port, () => {
 
 app.get('/', (req, res) => {
   console.log('Welcome to Sample Node Application')
- 
   res.send({data:"Welcome to Sample Node Application"})
 })
 
 app.get('/withStringify', (req, res) => {
   console.log('Data withStringify :: ')
   let data = JSON.stringify(obj);
-  console.log('WithStringify :: ', myJSON)
+  console.log('WithStringify :: ', data)
   res.send(data)
 })
 
