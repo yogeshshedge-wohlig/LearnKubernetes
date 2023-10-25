@@ -20,6 +20,12 @@ app.listen(port, () => {
   console.log(`Example app - Version 0.0.1 listening on port ${port}`)
 })
 
+app.get('/', (req, res) => {
+  console.log('Welcome to Sample Node Application')
+ 
+  res.send({data:"Welcome to Sample Node Application"})
+})
+
 app.get('/withStringify', (req, res) => {
   console.log('Data withStringify :: ')
   let data = JSON.stringify(obj);
